@@ -5,13 +5,20 @@ currentDay.innerText=(todaysDate);
 
 // arrays and definitions/variables
 var container=document.querySelector(".container");
-// let workingHoursArr=["9am","10am","11am","12am","1pm","2pm","3pm","4pm","5pm"]
 let workingHoursArr = [9,10,11,12,13,14,15,16,17]
 
 // for loop that calls createRow function 9 times to fill the page with a row for every hour
 for(i=0;i<workingHoursArr.length;i++){
   createRow();
-}
+  if (todaysDate.getHours() > workingHoursArr[i]) {
+    textArea.classList.add("past")
+  }
+    else if (todaysDate.getHours() == workingHoursArr[i]) {
+      textArea.classList.add("present")
+    }
+      else {
+        textArea.classList.add("future")
+  };
 
 // function that creates one of the rows for an hour of the workday
 function createRow() {
@@ -33,13 +40,14 @@ function createRow() {
   const saveBtn = document.createElement("div");
   row.appendChild(saveBtn);
   saveBtn.classList.add("saveBtn");
- saveBtn.innerText=("hey!");
+ saveBtn.innerText=("SAVE  ");
 
 
   saveBtn.addEventListener("click", function (){
     
   }
   )};
+};
 
 console.log(todaysDate.getHours());
 
