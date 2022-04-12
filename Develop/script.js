@@ -15,25 +15,28 @@ for(i=0;i<workingHoursArr.length;i++){
 
 // function that creates one of the rows for an hour of the workday
 function createRow() {
-  const timeBlock = document.createElement("div");
-  container.appendChild(timeBlock);
-  timeBlock.classList.add("time-block");
-  const timeBlockBeg = document.createElement("div");
-  timeBlock.appendChild(timeBlockBeg);
-  timeBlockBeg.classList.add("hour");
-  // const  = document.createElement("div");
-  // timeBlock.appendChild();
-  // .classList.add();
-  const saveBtn = document.createElement("div");
-  timeBlock.appendChild(saveBtn);
-  saveBtn.classList.add("saveBtn");
+  const row = document.createElement("div");
+  container.appendChild(row);
+  row.classList.add("row");
 
-  // captures current time and puts it at the beginning of the row
+  const rowHour = document.createElement("div");
+  row.appendChild(rowHour);
+  rowHour.classList.add("hour"); 
   const iFromForLoop = "9";
-  timeRowBeg.innerText=(iFromForLoop + ":00");
-  // maybe try 
+  rowHour.innerText=(iFromForLoop + ":00");
 
-  timeRowEnd.addEventListener("click", function (){
+  const textArea = document.createElement("div");
+  row.appendChild(textArea);
+  textArea.classList.add("textarea");
+  textArea.innerText=("hey!");
+
+  const saveBtn = document.createElement("div");
+  row.appendChild(saveBtn);
+  saveBtn.classList.add("saveBtn");
+ saveBtn.innerText=("hey!");
+
+
+  saveBtn.addEventListener("click", function (){
     
   }
   )};
