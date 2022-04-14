@@ -27,6 +27,7 @@ for (i = 0; i < workingHoursArr.length; i++) {
     const rowHour = document.createElement("div");
     row.appendChild(rowHour);
     rowHour.classList.add("hour");
+    rowHour.classList.add("col-1");
     const iFromForLoop = time;
     if (iFromForLoop < 10) {
       rowHour.innerText = ("0" + iFromForLoop + ":00")
@@ -37,12 +38,14 @@ for (i = 0; i < workingHoursArr.length; i++) {
     const textArea = document.createElement("textarea");
     row.appendChild(textArea);
     textArea.classList.add("textarea");
+    textArea.classList.add("col-10");
     textArea.innerText = storageTime;
 
     const saveBtn = document.createElement("div");
     row.appendChild(saveBtn);
     saveBtn.classList.add("saveBtn");
-    saveBtn.innerText = ("SAVE  ");
+    saveBtn.classList.add("col-1");
+    saveBtn.innerText = ("SAVE");
 
     if (currentHour > workingHoursArr[i]) {
       textArea.classList.add("past")

@@ -8,14 +8,10 @@ Employees with busy schedule need a way to organize and prioritize their workday
 
 ## Usage
 
-Visit the finished product here: https://tessshearer.github.io/Password-Generator/
+Visit the finished product here: https://tessshearer.github.io/Work-Day-Scheduler/
 
-![Screenshot of Password Generator](./assets/images/password-generator-screenshot.png)
+![Screenshot of Password Generator](./Develop/Screenshot-of-work-day-schedular.png)
 
-
-## Credits
-
-I created and finished this project on my own.# Password Generator Starter Code
 
 
 
