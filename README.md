@@ -10,7 +10,7 @@ Employees with busy schedule need a way to organize and prioritize their workday
 
 Visit the finished product here: https://tessshearer.github.io/Work-Day-Scheduler/
 
-![Screenshot of Password Generator](./Develop/Screenshot-of-work-day-schedular.png)
+![Screenshot of Password Generator](./assets/Screenshot-of-work-day-schedular.png)
 
 
 
